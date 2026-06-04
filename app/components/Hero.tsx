@@ -73,7 +73,7 @@ export function Hero() {
       {/* hero content */}
       <div
         className="relative z-10 flex flex-col items-center justify-start px-6 text-center"
-        style={{ paddingTop: "calc(9rem - 75px)", paddingBottom: "10rem" }}
+        style={{ paddingTop: "calc(9rem - 75px + 10vh)", paddingBottom: "10rem" }}
       >
         <h1
           className="font-display animate-fade-rise max-w-5xl text-5xl font-normal sm:text-7xl md:text-[5.5rem]"

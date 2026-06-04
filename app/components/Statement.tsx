@@ -46,7 +46,8 @@ export function Statement() {
   return (
     <section
       ref={ref}
-      className="relative mx-auto flex min-h-[120vh] max-w-7xl items-center justify-center px-6 py-40"
+      id="mission"
+      className="relative mx-auto flex min-h-[120vh] max-w-7xl items-center justify-center px-6 py-40 scroll-mt-24"
     >
       {/* scroll-driven floating tags */}
       {tags.map((t) => (
