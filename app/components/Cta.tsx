@@ -10,8 +10,8 @@ export function Cta() {
       <div className="block-dark relative flex min-h-[70vh] flex-col items-center justify-center overflow-hidden rounded-[34px] px-6 text-center">
         {/* eslint-disable-next-line @next/next/no-img-element */}
         <img
-          src="/images/cta.jpg"
-          alt="Mountain valley path"
+          src="/images/sunrise-hikers.jpg"
+          alt="Hikers walking toward the sunrise over the mountains"
           className="absolute inset-0 z-0 h-full w-full object-cover"
         />
         <div

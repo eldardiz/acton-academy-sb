@@ -8,26 +8,26 @@ const services = [
   {
     title: "Whole-Child Development",
     body: "We nurture the head, heart, and hands together, so children grow in mind, character, and body, not just in test scores.",
-    img: "/images/kids-gardening.jpg",
+    img: "/images/spark-gardening.jpg",
     alt: "Children planting and tending a garden together",
   },
   {
     title: "Purposeful Play",
     body: "Play is serious work at this age. Through it children build problem-solving, creativity, language, and the simple joy of discovery.",
-    img: "/images/coaching.jpg",
-    alt: "Children at play outdoors",
+    img: "/images/spark-journey.jpg",
+    alt: "Young children exploring the outdoors with their backpacks",
   },
   {
     title: "Montessori-Inspired Learning",
     body: "Hands-on, self-directed materials let young learners explore at their own pace and follow their own questions wherever they lead.",
-    img: "/images/team.jpg",
-    alt: "Open natural landscape",
+    img: "/images/spark-classroom.jpg",
+    alt: "A guide working alongside two young learners at a table",
   },
   {
     title: "Character and Community",
     body: "Children practice kindness, honesty, and courage in a close community where every learner is known and every learner belongs.",
-    img: "/images/nonprofit.jpg",
-    alt: "Warm horizon at dusk",
+    img: "/images/spark-community.jpg",
+    alt: "Families gathering at an outdoor community welcome day",
   },
 ];
 

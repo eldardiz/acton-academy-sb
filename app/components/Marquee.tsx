@@ -13,13 +13,19 @@ const topics = [
 export function Marquee() {
   const row = [...topics, ...topics];
   return (
-    <section className="px-3 pt-3">
-      <div className="overflow-hidden rounded-full bg-sand py-4 [mask-image:linear-gradient(to_right,transparent,black_6%,black_94%,transparent)]">
-        <div className="marquee-track flex w-max items-center gap-7 whitespace-nowrap">
+    <section className="border-y border-line bg-white py-6">
+      <div className="overflow-hidden [mask-image:linear-gradient(to_right,transparent,black_8%,black_92%,transparent)]">
+        <div className="marquee-track flex w-max items-center gap-10 whitespace-nowrap">
           {row.map((t, i) => (
-            <span key={i} className="flex items-center gap-7 text-[17px] text-ink/80">
+            <span
+              key={i}
+              className="flex items-center gap-10 text-[13px] uppercase tracking-[0.18em]"
+              style={{ color: "#6F6F6F" }}
+            >
               {t}
-              <span className="text-espresso/40" aria-hidden>✳</span>
+              <span style={{ color: "#c9c7c2" }} aria-hidden>
+                ✦
+              </span>
             </span>
           ))}
         </div>

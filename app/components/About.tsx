@@ -31,10 +31,28 @@ export function About() {
             whileInView={{ y: 0, opacity: 1 }}
             viewport={{ once: true, margin: "-60px" }}
             transition={{ duration: 0.7, ease }}
-            className="block-dark relative flex aspect-[4/5] items-center justify-center overflow-hidden rounded-[26px]"
+            className="block-dark relative flex aspect-[4/5] items-end overflow-hidden rounded-[26px]"
           >
-            <span className="slot-label">Portrait of Max Peck</span>
-            <span className="font-display text-[110px] leading-none text-cream/85">MP</span>
+            {/* eslint-disable-next-line @next/next/no-img-element */}
+            <img
+              src="/images/forest-canopy.jpg"
+              alt="Forest canopy near Santa Barbara"
+              className="absolute inset-0 h-full w-full object-cover"
+            />
+            <div
+              className="pointer-events-none absolute inset-0"
+              style={{
+                background:
+                  "linear-gradient(180deg, rgba(10,10,10,0.15) 0%, rgba(10,10,10,0.1) 45%, rgba(10,10,10,0.85) 100%)",
+              }}
+              aria-hidden
+            />
+            <div className="relative z-[2] p-8">
+              <p className="font-display text-[34px] leading-none text-white">Max Peck</p>
+              <p className="mt-2 text-[13px] text-white/70">
+                Founder · Former U.S. Marine Corps officer
+              </p>
+            </div>
           </motion.div>
 
           {/* bio */}
