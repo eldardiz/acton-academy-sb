@@ -11,6 +11,23 @@
 - **Vercel:** eldardizs-projects/acton-academy-sb (auto-deploys on push to `main`)
 - Note: the raw deployment URL (`acton-academy-rglhn1w0k-...`) returns 401 due to Vercel deployment protection. Share the clean alias above, which is public.
 
+## v2 Redesign (2026-06-04, post-partner feedback)
+
+Partner felt v1 was "too Claude obvious." Reworked toward a bespoke, premium feel:
+
+- **Identity shift → Aethera light/minimal**: white/black/gray palette, Instrument Serif display + Inter body, editorial whitespace. (`app/globals.css` rethemed; legacy color aliases kept so utility names still resolve.)
+- **Hero**: Aethera-style centered serif headline with gray-italic emphasis + the exact Aethera CloudFront video band, with a custom requestAnimationFrame fade-in/out loop (`app/components/Hero.tsx`).
+- **Real logo everywhere**: `public/logo.png` in the nav (on white) and in a light chip on the dark footer.
+- **Real photos** (from `~/Desktop/academyImgs`) replace ALL stock: Spark Studio cards (gardening, kids outdoors, classroom, community day), founder/forest portrait, sunrise-hikers CTA. No stock placeholders remain.
+- **Liquid-glass footer** (`app/components/Footer.tsx`): footer CloudFront video background + `.liquid-glass` panel, `motion/react` entrance, `lucide-react` social icons (Instagram/Facebook/LinkedIn/Mail/Phone), carrying Acton's existing footer copy.
+- **Statement** made larger + taller + scroll-driven: frosted tags parallax-drift via `useScroll`/`useTransform` (`app/components/Statement.tsx`).
+- **Premium motion** across nav/hero/sections.
+
+**Build notes:**
+- `lucide-react` pinned to `0.499.0` — the registry's `latest` (1.17.0) is a stripped build missing brand icons (Instagram/Facebook/Linkedin).
+- The Helvetica `@font-face` from the spec is included in CSS, but Inter remains the primary `--font-sans` (avoids a hard dependency on an external font CDN that could fail during the live meeting; Inter is visually near-identical).
+- `motion` + `framer-motion` both present; new/edited components use `motion/react`.
+
 ## Lead
 
 - **Business:** Acton Academy Santa Barbara — learner-driven private micro-school, ages 4 to 7 ("Spark Studio")
