@@ -107,7 +107,7 @@ export function Hero() {
 
         <span
           className="animate-fade-rise-delay-3 mt-6 text-xs uppercase tracking-[0.2em]"
-          style={{ color: "#9a9a9a" }}
+          style={{ color: "#ffffff", textShadow: "0 1px 12px rgba(0,0,0,0.45)" }}
         >
           A learner-driven school in Santa Barbara · Ages 4 to 7
         </span>
